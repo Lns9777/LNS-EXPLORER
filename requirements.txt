@@ -10,6 +10,7 @@ decorator==5.1.1
 Django==5.1.2
 executing==2.0.1
 google_search_results==2.4.2
+gunicorn==23.0.0
 idna==3.10
 ipykernel==6.29.4
 ipython==8.24.0
