@@ -2,6 +2,7 @@ from django.shortcuts import render,HttpResponse
 from django.http import JsonResponse
 import pickle
 import json
+import nltk
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -19,6 +20,7 @@ import base64
 import os
 from django.http import HttpResponse
 # Create your views here.
+nltk.download('punkt')
 
 def home(request):
      return render(request, 'index.html')
